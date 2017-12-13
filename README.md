@@ -1,7 +1,6 @@
 ## my-shop商城
 独立完成项目的设计及开发工作:需求分析,数据库设计
 基于laravel5.4开发。  
-表单使用的是Laravel Collective 验证使用前后台验证，前端验证使用的是validation.js插件自动验证，后端使用Laravel的validate验证
 网站前后台页面模板都由本人自主设计，其中后台使用目前比较流行的Amaze UI模板,本次后台的一些功能模块如下： 
 系统设置：
 错误日志（使用Laravel Log Viewer 可以直接通过这个在浏览器上面直接查看错误信息）
@@ -28,16 +27,12 @@
 	自定义菜单（Laravel安装easyWechat，注册服务生成配置文件，配置路由，创建控制器，实现增删改查）
 定位：
 	地图定位（使用高德的API接口调用地图）
-前端页面使用vue.js，内容如下：
-商城首页（使用vue技术做成的轮播图和一些基本的查询）
+前端页面内容如下：
+商城首页（轮播图和一些基本的查询）
 订单管理（使用Ajax实时查询订单状态）
 购 物 车（使用vue计算购物信息，页面实时改变）
 收货地址（一个用户有多个收货地址，模型定义关联关系）
 微信关键字回复（在.env文件中设置token，用于验证微信与服务器项目是否对接，在中间件WeChat.php中设置用户session信息并添加中间件同时核心里面注册该中间件在config文件夹中的WeChat.php中开启OAuth配置，在api.php中配置微信前端接口路由并创建控制器和方法，模型设置黑名单，过滤微信不需要的字段，修改微信公众平台测试号中的接口配置信息，最后设置各种事件，查询需要的数据）  
 采用用户授权获取用户相关信息，如：openid，昵称，性别，头像等  
-API接口调用：
-笑话API（聚合数据的笑话API）
-新闻API（IDataApi接口）
-天气API（京东万象上面的天气API）
 开发工具：phpstorm  Laragon
-涉及技术： html，css，jquery，ajax，分页，Amaze UI，vue，validation.js，Redis，ECharts，easyWechat，Maradown，Webupload
+涉及技术： html，css，jquery，ajax，分页，Amaze UI，Redis，ECharts，easyWechat，Maradown，Webupload
